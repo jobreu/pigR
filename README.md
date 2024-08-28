@@ -4,7 +4,7 @@ A simple R package for translating English to Pig Latin :pig:
 
 This package is a simple implementation of the Pig Latin translation algorithm in R. Pig Latin is a language game that involves altering English words according to a simple set of rules. The rules used by this package are described in the [Pig Latin Wikipedia entry](https://en.wikipedia.org/wiki/Pig_Latin#Rules).
 
-The package includes two simple functions for translating English words or sentences/strings to Pig Latin:
+The package includes two simple functions for translating English words or sentences to Pig Latin:
 `pig_word()` and `pig_sentence()`.
 
 ## 1) Installation
