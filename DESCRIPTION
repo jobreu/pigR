@@ -1,0 +1,19 @@
+Package: pigR
+Type: Package
+Title: Translate English Words and Sentences to Pig Latin
+Version: 0.1.0
+Authors@R: person("Johannes", "Breuer", email = "johannes.breuer@gesis.org",
+                  role = c("aut", "cre"))
+Maintainer: Johannes Breuer <johannes.breuer@gesis.org>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 4.0)
+URL: https://github.com/jobreu/pigR
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
