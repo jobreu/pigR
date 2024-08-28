@@ -27,3 +27,5 @@ pig_word("encoding")
 pig_sentence("I saved latin! What did you ever do?")
 ``` 
 *Credits*: The creation of this package followed the [tutorial by Matti Vuorre](https://mvuorre.github.io/exampleRPackage/). The code for this package was written with the help of *ChatGPT* (model 4o). The hex logo was created using *Microsoft Bing Copilot*.
+
+*Note*: After completing this silly little fun project, I found the [`piglatin` package by expersso](https://github.com/expersso/piglatin). So all credit for the original joke goes to him :smile:
