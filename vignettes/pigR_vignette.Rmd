@@ -1,0 +1,104 @@
+---
+title: "Using pigR"
+author: "Johannes Breuer"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using pigR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Introduction
+
+The `pigR` package provides functions to translate English words and sentences to Pig Latin. This vignette will guide you through the usage of the package, including installation, basic usage, and advanced examples.
+
+# Installation
+
+To install the `pigR` package from GitHub, use the following commands:
+
+```r
+# Install remotes package if not already installed
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+
+# Install `pigR` from *GitHub*
+remotes::install_github("jobreu/pigR")
+```
+
+# Basic usage
+
+Load the `pigR` package:
+
+```r
+library(pigR)
+```
+
+## Translating a single word
+
+Use the `pig_word()` function to translate a single English word to Pig Latin:
+
+```r
+pig_word("encoding")
+#> [1] "encodingway"
+```
+
+## Translating a sentence
+
+Use the `pig_sentence()` function to translate an English sentence to Pig Latin:
+
+```r
+pig_sentence("I saved latin! What did you ever do?")
+#> [1] "iway avedsay atinlay atwhay idday ouyay everway oday"
+```
+
+# Advanced examples
+
+## Words with mixed case
+
+The `pig_word()` function handles words with mixed case by converting them to lowercase before translation:
+
+```r
+pig_word("Apple")
+#> [1] "appleway"
+```
+
+## Words with no vowels
+
+The `pig_word()` function handles words with no vowels by appending "ay" to the end of the word:
+
+```r
+pig_word("rhythm")
+#> [1] "rhythmay"
+```
+
+## Sentences with punctuation
+
+The `pig_sentence()` function removes punctuation from the sentence before translation:
+
+```r
+pig_sentence("Hello, world!")
+#> [1] "ellohay orldway"
+```
+
+## Sentences with mixed case
+
+The `pig_sentence()` function handles sentences with mixed case by converting all words to lowercase before translation:
+
+```r
+pig_sentence("Mixed CASE sentence.")
+#> [1] "ixedmay asecay entencesay"
+```
+
+# Summary
+
+The `pigR` package provides simple and easy-to-use functions for translating English words and sentences to Pig Latin. This vignette has covered the basic and advanced usage of the package. For more detailed information, refer to the package documentation and the README file.
+
+# References
+
+The rules used by this package are described in the [Pig Latin Wikipedia entry](https://en.wikipedia.org/wiki/Pig_Latin#Rules).
+
+*Credits*: The creation of this package followed the [tutorial by Matti Vuorre](https://mvuorre.github.io/exampleRPackage/). The code for this package was written with the help of *ChatGPT* (model 4o). The hex logo was created using *Microsoft Bing Copilot*.
+
+*Note*: After completing this silly little fun project, I found the [`piglatin` package by expersso](https://github.com/expersso/piglatin). So all credit for the original joke goes to him :smile:

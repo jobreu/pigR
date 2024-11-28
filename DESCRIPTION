@@ -1,13 +1,12 @@
 Package: pigR
 Type: Package
 Title: Translate English Words and Sentences to Pig Latin
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: person("Johannes", "Breuer", email = "johannes.breuer@gesis.org",
                   role = c("aut", "cre"),
                   comment = c(ORCID = "0000-0001-5906-7873"))
 Maintainer: Johannes Breuer <johannes.breuer@gesis.org>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: This package provides functions to translate English words and sentences to Pig Latin. It includes two main functions: `pig_word()` for translating individual words and `pig_sentence()` for translating entire sentences. The package follows the rules described in the Pig Latin Wikipedia entry. It handles punctuation, mixed case, and words with no vowels.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
